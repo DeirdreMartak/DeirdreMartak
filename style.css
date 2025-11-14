@@ -1,0 +1,74 @@
+body {
+    font-family: Papyrus, Courier, monospace;
+    background: #CEF2F0;
+    color: #1C2070;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background: #460C47;
+    color:cornsilk;
+    border-radius: 15px;
+    padding: 30px;
+    width: 600px;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.style-select, .style-input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.541)
+}
+
+.style-select:focus, .style-input:focus{
+    outline: none;
+    box-shadow: 0 0 5px #a7afb3;
+}
+
+.style-button{
+    background-color: rgb(216, 151, 213);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.style-button:hover{
+    background-color: rgb(173, 245, 245);
+    transform: scale(1.05);
+}
+
+.game-area {
+    margin-top: 20px;
+}
+
+.hint-text{
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color:azure;
+}
+
+.score-text, .message-text {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.hidden {
+    display: none;
+}

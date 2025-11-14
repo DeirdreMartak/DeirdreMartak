@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+       <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Guess the Number Game</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Guess the Number</h1>
+
+            <!--Where players will choose thire difficulty level-->
+            <label for="difficulty">Choose Difficulty: </label>
+            <select id="difficulty" class="style-select">
+                <option value="easy">Easy (1 - 10)</option>
+                <option value="medium">Medium (1 - 50)</option>
+                <option value="hard">Hard (1 - 100)</option>
+            </select>
+
+            <button id="start-button" class="style-button">Start Game</button>
+            <div id="game" class="hidden game-area">
+
+                <!--hide hints and score until game starts --> 
+                <input type= "number" id="user-input" class="style-input" placeholder="Enter Number">
+                <button id="guess-button" class ="style-button">Guess</button>
+
+                <!--Section for scoring and hints AFTER guess-->
+                <p id="score" class="score-text">Score: 0</p>
+                <p id="message" class="message-text"></p>
+                <p id="hint" class="hint-text"></p>
+
+                <!-- click to next random number -->
+                <button id="next-button" class="style-button">Next Number</button>
+            </div>
+         </div>
+            <script src="script.js"></script>
+    </body>
+</html>
